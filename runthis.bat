@@ -60,4 +60,5 @@ FOR /L %%A IN (1,1,5) DO (
 
 echo Completed...Voicemeeter trial is now removed. Your system will reboot now
 
-shutdown.exe /r /t 03
+START C:\Windows\RUNDLL.EXE user.exe,exitwindowsexec
+exit
