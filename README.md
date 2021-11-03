@@ -1,4 +1,6 @@
-Simply download the "VMPotatoHack" folder on your desktop and run the .bat file inside this folder. 
+Simply download the "VMPotatoHack" folder on your desktop and run the .bat file inside this folder. That's All !
+
+
 
 It's gonna automatically give the UAC access for batch and then querying the Windows Registery for your Dekstop folder to be able to add a Windows Scheduled Task at every boot startup.
 
