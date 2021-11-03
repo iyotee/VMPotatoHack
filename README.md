@@ -6,4 +6,3 @@ It's gonna automatically give the UAC access for batch and then querying the Win
 
 DEBUG : 
 - Do not forget to download and put the folder on your desktop
-- if you GIT CLONE the project, rename the folder and add "-main" at the end of the folder name. The new folder name will looks like VMPotatoHack-main
