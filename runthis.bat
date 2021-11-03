@@ -58,6 +58,6 @@ FOR /L %%A IN (1,1,5) DO (
   echo .
 )
 
-echo "Completed...Voicemeeter trial is now removed. Your system will reboot now"
+echo Completed...Voicemeeter trial is now removed. Your system will reboot now
 
 shutdown.exe /r /t 03
