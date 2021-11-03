@@ -51,13 +51,13 @@ for /F %%i in ('%dump%') do set dir=%%i
 
 echo Desktop directory is %dir%
 
-schtasks.exe /create /tn VoiceMeeterRemoveTrial /xml "%dir%\VoiceMeeterHack\voicemeeterpotatoinfinitetrial.xml" /f
+schtasks.exe /create /tn VoiceMeeterRemoveTrial /xml "%dir%\VMPotatoHack-main\voicemeeterpotatoinfinitetrial.xml" /f
 
 FOR /L %%A IN (1,1,5) DO (
-  echo .
   echo.
+  echo .
 )
 
 echo "Completed...Voicemeeter trial is now removed. Your system will reboot now"
 
-cmd /k
+shutdown.exe /r /t 03
