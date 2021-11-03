@@ -1,4 +1,4 @@
-Simply download the "VMPotatoHack" folder on your desktop and run the .bat file inside this folder. That's All !
+Simply download the "VMPotatoHack" zip folder on your desktop, unzip and run the .bat file inside this folder. That's All !
 
 
 
