@@ -45,19 +45,23 @@ FOR /L %%A IN (1,1,5) DO (
   echo.
 )
 
+:: Getting the user Desktop even he changed his destination path
 set dkey=Desktop
 set dump=powershell.exe -NoLogo -NonInteractive "Write-Host $([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::%dkey%))"
 for /F %%i in ('%dump%') do set dir=%%i
 
 echo Desktop directory is %dir%
 
+
+:: Adding a windows task at every bootup with the XML rules
 schtasks.exe /create /tn VoiceMeeterRemoveTrial /xml "%dir%\VMPotatoHack-main\voicemeeterpotatoinfinitetrial.xml" /f
+
 
 FOR /L %%A IN (1,1,5) DO (
   echo.
   echo .
 )
-
+ :: Returning a completed to user, and reboot the system to apply the changes
 echo Completed...Voicemeeter trial is now removed. Your system will reboot now
 
 timeout 5
